@@ -43,31 +43,12 @@ if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 }
 
 
-void Renderer::processInput(GLFWwindow *window)
-{
-	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-	glfwSetWindowShouldClose(window, true);
-}
-
-void Renderer::renderLoop()
-{
-	while (!glfwWindowShouldClose(window))
-	{
-		processInput(window);
-
-		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-		// -------------------------------------------------------------------------------
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	}
-
-}
-
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
 // -----;----------------------------------------------------------------------------------------
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 glViewport(0, 0, width, height);
+std::cout<<"resize event! \n";
 }
 
 int Renderer::terminate(){

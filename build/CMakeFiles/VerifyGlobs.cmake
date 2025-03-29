@@ -17,6 +17,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mushen/Code/ogl_dorkin/
 set(OLD_GLOB
   "/home/mushen/Code/ogl_dorkin/src/input.cpp"
   "/home/mushen/Code/ogl_dorkin/src/main.cpp"
+  "/home/mushen/Code/ogl_dorkin/src/renderCycle.cpp"
   "/home/mushen/Code/ogl_dorkin/src/windowworks.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -30,6 +31,7 @@ set(OLD_GLOB
   "/home/mushen/Code/ogl_dorkin/src/include/KHR/khrplatform.h"
   "/home/mushen/Code/ogl_dorkin/src/include/glad/glad.h"
   "/home/mushen/Code/ogl_dorkin/src/include/renderer.h"
+  "/home/mushen/Code/ogl_dorkin/src/include/shader.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

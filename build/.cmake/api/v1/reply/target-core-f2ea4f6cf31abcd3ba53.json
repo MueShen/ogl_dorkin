@@ -65,10 +65,6 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wall"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Werror"
 				}
 			],
 			"includes" : 
@@ -90,10 +86,6 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wall"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Werror"
 				}
 			],
 			"includes" : 
@@ -108,7 +100,8 @@
 			[
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -168,16 +161,18 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4,
 				5,
-				6
+				6,
+				7,
+				8
 			]
 		}
 	],
@@ -204,6 +199,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
+			"path" : "src/renderCycle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
 			"path" : "src/windowworks.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -220,6 +221,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/include/renderer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/include/shader.h",
 			"sourceGroupIndex" : 1
 		}
 	],

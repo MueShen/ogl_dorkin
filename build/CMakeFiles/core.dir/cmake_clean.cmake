@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/core.dir/src/input.cpp.o.d"
   "CMakeFiles/core.dir/src/main.cpp.o"
   "CMakeFiles/core.dir/src/main.cpp.o.d"
+  "CMakeFiles/core.dir/src/renderCycle.cpp.o"
+  "CMakeFiles/core.dir/src/renderCycle.cpp.o.d"
   "CMakeFiles/core.dir/src/windowworks.cpp.o"
   "CMakeFiles/core.dir/src/windowworks.cpp.o.d"
 )

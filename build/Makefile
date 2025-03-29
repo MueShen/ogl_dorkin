@@ -202,6 +202,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/renderCycle.o: src/renderCycle.cpp.o
+.PHONY : src/renderCycle.o
+
+# target to build an object file
+src/renderCycle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/renderCycle.cpp.o
+.PHONY : src/renderCycle.cpp.o
+
+src/renderCycle.i: src/renderCycle.cpp.i
+.PHONY : src/renderCycle.i
+
+# target to preprocess a source file
+src/renderCycle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/renderCycle.cpp.i
+.PHONY : src/renderCycle.cpp.i
+
+src/renderCycle.s: src/renderCycle.cpp.s
+.PHONY : src/renderCycle.s
+
+# target to generate assembly for a file
+src/renderCycle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/renderCycle.cpp.s
+.PHONY : src/renderCycle.cpp.s
+
 src/windowworks.o: src/windowworks.cpp.o
 .PHONY : src/windowworks.o
 
@@ -244,6 +268,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/renderCycle.o"
+	@echo "... src/renderCycle.i"
+	@echo "... src/renderCycle.s"
 	@echo "... src/windowworks.o"
 	@echo "... src/windowworks.i"
 	@echo "... src/windowworks.s"
