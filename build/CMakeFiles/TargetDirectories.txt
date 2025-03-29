@@ -1,0 +1,3 @@
+/home/mushen/Code/ogl_dorkin/build/CMakeFiles/core.dir
+/home/mushen/Code/ogl_dorkin/build/CMakeFiles/edit_cache.dir
+/home/mushen/Code/ogl_dorkin/build/CMakeFiles/rebuild_cache.dir

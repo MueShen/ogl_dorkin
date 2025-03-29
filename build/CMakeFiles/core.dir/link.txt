@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/core.dir/src/glad.c.o CMakeFiles/core.dir/src/input.cpp.o CMakeFiles/core.dir/src/main.cpp.o CMakeFiles/core.dir/src/windowworks.cpp.o -o /home/mushen/Code/ogl_dorkin/bin/core   -L/home/mushen/Code/vnd  -L/usr/include  -Wl,-rpath,/home/mushen/Code/vnd:/usr/include -lGL -lglfw -lX11 
