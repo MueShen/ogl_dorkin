@@ -29,9 +29,9 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mushen/Code/ogl_dorkin/src/include/*.h")
 set(OLD_GLOB
   "/home/mushen/Code/ogl_dorkin/src/include/KHR/khrplatform.h"
+  "/home/mushen/Code/ogl_dorkin/src/include/fileworks.h"
   "/home/mushen/Code/ogl_dorkin/src/include/glad/glad.h"
   "/home/mushen/Code/ogl_dorkin/src/include/renderer.h"
-  "/home/mushen/Code/ogl_dorkin/src/include/shader.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

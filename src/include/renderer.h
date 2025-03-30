@@ -16,7 +16,7 @@ public:
 	void startup(){
 		init();
 		gladInit();
-		//shaderInit(); //TODO: implement object and shader handling
+		shaderInit(); //TODO: implement object and shader handling
 		renderLoop();
 		terminate();	
 	};
@@ -25,4 +25,4 @@ public:
 	void renderLoop();
 	void processInput(GLFWwindow *window);
 	int terminate();
-};
+}; 
