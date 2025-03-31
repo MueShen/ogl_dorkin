@@ -4,6 +4,6 @@
 int main()
 {
 	Renderer render=Renderer(600,400);
-	//render.startup();	
+	render.startup();	
 	return 0;
 }

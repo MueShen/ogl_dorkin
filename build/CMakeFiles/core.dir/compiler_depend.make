@@ -631,7 +631,7 @@ CMakeFiles/core.dir/src/renderCycle.cpp.o: /home/mushen/Code/ogl_dorkin/src/rend
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
-  /home/mushen/Code/ogl_dorkin/src/include/shader.h \
+  /home/mushen/Code/ogl_dorkin/src/include/fileworks.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
@@ -666,7 +666,13 @@ CMakeFiles/core.dir/src/renderCycle.cpp.o: /home/mushen/Code/ogl_dorkin/src/rend
   /usr/include/c++/12/bits/uses_allocator.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
   /usr/include/c++/12/bits/fs_dir.h \
-  /usr/include/c++/12/bits/fs_ops.h
+  /usr/include/c++/12/bits/fs_ops.h \
+  /home/mushen/Code/ogl_dorkin/src/include/object.h \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc
 
 CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/windowworks.cpp \
   /usr/include/stdc-predef.h \
@@ -858,6 +864,10 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
   /home/mushen/Code/ogl_dorkin/src/include/glad/glad.h
 
 
+/usr/include/c++/12/bits/stl_bvector.h:
+
+/usr/include/c++/12/bits/stl_vector.h:
+
 /usr/include/c++/12/ext/aligned_buffer.h:
 
 /usr/include/c++/12/bits/allocated_ptr.h:
@@ -896,6 +906,8 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
+/usr/include/c++/12/vector:
+
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
 /usr/include/c++/12/tuple:
@@ -915,6 +927,8 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 /usr/include/c++/12/system_error:
 
 /usr/include/c++/12/bits/basic_string.tcc:
+
+/home/mushen/Code/ogl_dorkin/src/include/fileworks.h:
 
 /usr/include/c++/12/bits/charconv.h:
 
@@ -974,6 +988,8 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 
 /usr/include/c++/12/bits/cxxabi_forced.h:
 
+/usr/include/c++/12/bits/vector.tcc:
+
 /usr/include/c++/12/bits/invoke.h:
 
 /usr/include/c++/12/bits/predefined_ops.h:
@@ -993,6 +1009,8 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 /home/mushen/Code/ogl_dorkin/src/main.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/home/mushen/Code/ogl_dorkin/src/include/object.h:
 
 /usr/include/c++/12/bits/fs_dir.h:
 
@@ -1015,6 +1033,8 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 /usr/include/c++/12/bits/refwrap.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/12/bits/stl_uninitialized.h:
 
 /usr/include/string.h:
 
@@ -1313,8 +1333,6 @@ CMakeFiles/core.dir/src/windowworks.cpp.o: /home/mushen/Code/ogl_dorkin/src/wind
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/home/mushen/Code/ogl_dorkin/src/include/shader.h:
 
 /usr/include/dlfcn.h:
 

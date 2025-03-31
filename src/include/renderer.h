@@ -16,7 +16,6 @@ public:
 	void startup(){
 		init();
 		gladInit();
-		shaderInit(); //TODO: implement object and shader handling
 		renderLoop();
 		terminate();	
 	};

@@ -48,7 +48,7 @@ if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 glViewport(0, 0, width, height);
-std::cout<<"resize event! \n";
+//std::cout<<"resize event! \n";
 }
 
 int Renderer::terminate(){

@@ -31,6 +31,7 @@ set(OLD_GLOB
   "/home/mushen/Code/ogl_dorkin/src/include/KHR/khrplatform.h"
   "/home/mushen/Code/ogl_dorkin/src/include/fileworks.h"
   "/home/mushen/Code/ogl_dorkin/src/include/glad/glad.h"
+  "/home/mushen/Code/ogl_dorkin/src/include/object.h"
   "/home/mushen/Code/ogl_dorkin/src/include/renderer.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

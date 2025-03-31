@@ -4,6 +4,7 @@
 #include <iostream>
 #include <filesystem>
 #include <stdexcept> 
+#include <sstream>
 
 
 std::string readFile(std::string path){
