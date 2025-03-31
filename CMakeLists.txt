@@ -20,4 +20,4 @@ target_compile_options(core PRIVATE -Wall  )
 
 target_include_directories(core PUBLIC ${GLFWDIR} ${OPENGL_INCLUDE_DIR}) 
 target_link_directories(core PUBLIC ${GLFWDIR} ${OPENGL_INCLUDE_DIR})
-target_link_libraries(core ${OPENGL_gl_LIBRARY} glfw X11) 
+target_link_libraries(core ${OPENGL_gl_LIBRARY} glfw X11)

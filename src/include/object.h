@@ -89,7 +89,7 @@ class gObject{
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, triangles);
 		//glDrawElements(GL_TRIANGLES,triangles,GL_UNSIGNED_INT,0);
-		glBindVertexArray(0);
+		//glBindVertexArray(0);
 	}
 
 	void Dealloc()

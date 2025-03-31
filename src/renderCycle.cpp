@@ -49,6 +49,7 @@ void Renderer::renderLoop()
 		glfwPollEvents();
 
 	}
+	firstTrig.Dealloc();
 
 }
 
