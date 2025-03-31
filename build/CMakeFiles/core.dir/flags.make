@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/mushen/Code/vnd
 
-C_FLAGS = -Wall
+C_FLAGS = -Wall -Wextra
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -I/home/mushen/Code/vnd
 
-CXX_FLAGS = -Wall
+CXX_FLAGS = -Wall -Wextra
 

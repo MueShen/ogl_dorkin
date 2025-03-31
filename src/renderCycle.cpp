@@ -4,7 +4,7 @@
 
 
 
-std::vector<float> vertices = {
+float vertices[]= {
     -0.5f, -0.5f, 0.0f,
      0.5f, -0.5f, 0.0f,
      0.0f,  0.5f, 0.0f
@@ -24,14 +24,16 @@ std::string fragmentShaderSource = "#version 330 core\n"
     "out vec4 FragColor;\n"
     "void main()\n"
     "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+    "   FragColor = vec4(0.97f, 0.00f, 1.00, 1.0f);\n"
     "}\n\0";
 
 
 
 void Renderer::renderLoop()
 {
-	gObject firstTrig(vertexShaderSource.c_str(),fragmentShaderSource.c_str(),vertices,indicies);
+	gObject firstTrig(vertexShaderSource.c_str(),
+			fragmentShaderSource.c_str(),
+			vertices,indicies);
 	firstTrig.ShaderPrep();
 	firstTrig.BufferInit(3);
 	while (!glfwWindowShouldClose(window))

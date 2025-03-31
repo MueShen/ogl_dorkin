@@ -16,7 +16,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin/")
 add_executable(core ${SOURCES} ${HEADERS})
 
 
-target_compile_options(core PRIVATE -Wall  )
+target_compile_options(core PRIVATE -Wall -Wextra )
 
 target_include_directories(core PUBLIC ${GLFWDIR} ${OPENGL_INCLUDE_DIR}) 
 target_link_directories(core PUBLIC ${GLFWDIR} ${OPENGL_INCLUDE_DIR})
