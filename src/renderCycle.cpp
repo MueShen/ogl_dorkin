@@ -4,7 +4,7 @@
 
 
 
-float vertices[]= {
+std::vector<float> vertices= {
     -0.5f, -0.5f, 0.0f,
      0.5f, -0.5f, 0.0f,
      0.0f,  0.5f, 0.0f
@@ -45,7 +45,7 @@ void Renderer::renderLoop()
 		glClear(GL_COLOR_BUFFER_BIT);
 	
 
-		firstTrig.Draw(3);
+		firstTrig.Draw();
 		//std::cout<<"test\n";
 		glfwSwapBuffers(window);
 		glfwPollEvents();

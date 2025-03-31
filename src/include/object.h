@@ -12,9 +12,9 @@ class gObject{
 		const char* frag_shaderSource;
 		
 		std::vector<GLuint> indicies;
-		float *verticies;
+		std::vector<float> verticies;
 		gObject(){};	
-		gObject(const char* v_src,const char* f_src,float vert[], std::vector<GLuint> indx){
+		gObject(const char* v_src,const char* f_src,std::vector<float> vert, std::vector<GLuint> indx){
 			vert_shaderSource=v_src;
 			frag_shaderSource=f_src;
 			verticies=vert;
@@ -53,24 +53,19 @@ class gObject{
 	}
 
 	void BufferInit(int CompPerVert=3){
-		float vert[]= {
-		    -0.5f, -0.5f, 0.0f,
-		     0.5f, -0.5f, 0.0f,
-		     0.0f,  0.5f, 0.0f
-		};
-		//std::cout<<sizeof(float)<<std::endl;
+
+
 		glGenVertexArrays(1,&VAO);
 		glGenBuffers(1,&VBO);
-		//glGenBuffers(1,&EBO);
+		glGenBuffers(1,&EBO);
 
 		glBindVertexArray(VAO);
 		
-		std::cout<<sizeof(vert)<<std::endl;
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(vert), vert, GL_STATIC_DRAW);
-
-		//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-		//glBufferData(GL_ELEMENT_ARRAY_BUFFER,sizeof(indicies),&indicies,GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, sizeof(float)*verticies.size(), verticies.data(), GL_STATIC_DRAW);
+		
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER,sizeof(GLuint)*indicies.size(),indicies.data(),GL_STATIC_DRAW);
 		
 		glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3*sizeof(float), (void*)0);
 		glEnableVertexAttribArray(0);
@@ -97,12 +92,25 @@ class gObject{
 
 	}
 
-	void Draw(int triangles=3)
+	void Draw(int mode=0,int wireframe=0)
 	{
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-		//glDrawElements(GL_TRIANGLES,triangles,GL_UNSIGNED_INT,0);
+		//glDrawArrays(GL_TRIANGLES, 0, 3);
+		if(wireframe==0){
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		} else{
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		}
+		switch(mode){
+			case 1:
+				glDrawArrays(GL_TRIANGLES,0,verticies.size());
+				break;
+
+			default:
+				glDrawElements(GL_TRIANGLES,verticies.size(),GL_UNSIGNED_INT,0);
+		}
+
 		//glBindVertexArray(0);
 	}
 
