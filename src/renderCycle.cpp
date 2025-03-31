@@ -14,23 +14,15 @@ std::vector<GLuint> indicies={
 	0,1,2
 };
 
-std::string vertexShaderSource = "#version 330 core\n"
-    "layout (location = 0) in vec3 aPos;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-    "}\n\0";
-std::string fragmentShaderSource = "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(0.97f, 0.00f, 1.00, 1.0f);\n"
-    "}\n\0";
 
 
 
-void Renderer::renderLoop()
+
+void Renderer::renderLoop() 
 {
+	std::string vertexShaderSource=readFile("shaders/shader.vert");
+	std::string fragmentShaderSource=readFile("shaders/shader.frag"); 
+	
 	gObject firstTrig(vertexShaderSource.c_str(),
 			fragmentShaderSource.c_str(),
 			vertices,indicies);
@@ -41,7 +33,7 @@ void Renderer::renderLoop()
 		processInput(window);
 		
 		//glClearColor(0.859f, 0.388f, 0.004f, 1.0f);
-		glClearColor(0.1f,0.1f,0.2f,1.0f);
+		glClearColor(0.14f, 0.14f, 0.14f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 	
 
